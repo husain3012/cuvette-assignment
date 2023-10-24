@@ -1,0 +1,41 @@
+.main{
+    height: 100%;
+    background-color: var(--white);
+    padding-top: 2em;
+    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: start;
+    border-right: 2px solid var(--gray);
+
+    
+}
+
+
+
+.item{
+    display: flex;
+    align-items: center;
+    gap: 0.55em;
+    font-size: 1.1em;
+    color: var(--gray-text);
+    padding: 0.75em 0;
+    padding-left: 1.5em;
+    transition: all ease-in-out 200ms;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 12ch;
+
+}
+
+.item:hover{
+background-color: var(--hover-background);
+cursor: pointer;
+
+}
+
+.item.active{
+    color: var(--blue-text);
+}

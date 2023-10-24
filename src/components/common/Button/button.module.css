@@ -1,0 +1,26 @@
+.button {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 0.55em 1.2em;
+  border-color: var(--blue-primary);
+}
+
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    cursor: pointer;
+}
+
+.primary {
+  background-color: var(--blue-primary);
+  color: var(--white);
+
+}
+
+
+
+.secondary {
+  background-color: var(--white);
+  color: var(--blue-primary);
+}

@@ -1,0 +1,4 @@
+.card{
+    border: 1px solid var(--gray);
+    padding: 2em 1.5em;
+}

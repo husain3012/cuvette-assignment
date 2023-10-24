@@ -1,0 +1,32 @@
+.container {
+  width: 100%;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em 1.5em;
+  border-bottom: 1px solid var(--gray);
+}
+
+.logo {
+}
+
+.user-info {
+}
+
+.user-info-card {
+  border: 2px solid var(--gray);
+  border-radius: 10px;
+  display: flex;
+  gap: 2;
+  align-items: center;
+  padding: 0.5em 1.2em;
+  margin-left: auto;
+}
+
+.user-avatar img{
+   width: 32px;
+   border-radius: 100%;
+
+
+}
