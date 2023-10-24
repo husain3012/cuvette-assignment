@@ -1,0 +1,50 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.stats {
+  display: flex;
+}
+
+.stat-card {
+  display: flex;
+  padding: 0.5em 1em;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.stat-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.stat-icon {
+  border-radius: 100%;
+  padding: 0.8em;
+  background-color: var(--gray);
+  border: 1px solid var(--gray-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stat-icon img {
+  width: 20px;
+}
+
+.stat-value {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.stat-name {
+  color: var(--gray-text);
+  font-size: 1em;
+}

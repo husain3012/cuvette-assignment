@@ -1,0 +1,18 @@
+.progress-track {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  border-radius: 10px;
+  height: 0.75em;
+  background-color: var(--gray);
+}
+
+.progress-thumb {
+  transition: all ease-in-out 1000ms;
+  width: 0;
+  display: flex;
+  align-items: stretch;
+  border-radius: 10px;
+  height: 0.75em;
+  background-color: var(--blue-primary);
+}

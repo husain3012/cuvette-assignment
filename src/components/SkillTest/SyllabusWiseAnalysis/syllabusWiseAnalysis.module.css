@@ -1,0 +1,44 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.topic-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.topic-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    
+}
+
+
+.topic-name{
+    color: var(--gray-text);
+    font-size: 1.1em;
+
+
+}
+
+.progress-bar{
+    display: flex;
+    width: 20em;
+    align-items: center;
+}
+.progress-label{
+    margin-left: 5em;
+
+    font-weight: bold;
+}

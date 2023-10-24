@@ -1,0 +1,37 @@
+.main{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+
+}
+
+
+.icon img{
+    width: 32px;
+
+
+}
+
+.skill-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.5em
+}
+
+
+.skill-name{
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+.skill-description{
+    font-size: 0.9em;
+    color: var(--gray-text);
+}
+
+.update-btn{
+    margin-left: 2em;
+}

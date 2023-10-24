@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  gap: 2em;
+}
+
+.first-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+}
+
+.second-column {
+    display: flex;
+    flex-direction: column;
+  gap: 2em;
+
+  }
+  

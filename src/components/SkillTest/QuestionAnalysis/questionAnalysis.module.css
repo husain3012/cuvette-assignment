@@ -1,0 +1,14 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.chart-container{
+  min-height: 15em;
+}

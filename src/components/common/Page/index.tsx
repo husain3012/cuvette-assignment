@@ -5,6 +5,7 @@ const Page = ({children, pageTitle}:{children:React.ReactNode, pageTitle:string}
     <div>
         <h3 className={classes['page-title']}>{pageTitle}</h3>
         <br/>
+        <br/>
         {children}
     </div>
   )

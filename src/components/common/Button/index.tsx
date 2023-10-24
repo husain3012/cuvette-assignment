@@ -8,8 +8,13 @@ const Button = (
   }
 ) => {
   return (
-    <button className={`${classes['button']} ${classes[props.styletype || "primary"] || ""}`} {...props}>
-      Button
+    <button
+      {...props}
+      className={`${classes["button"]} ${
+        classes[props.styletype || "primary"] || ""
+      }  ${props.className || ""}`}
+    >
+      {props.children}
     </button>
   );
 };

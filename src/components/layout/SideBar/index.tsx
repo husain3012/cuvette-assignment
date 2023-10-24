@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import classes from "./sidebar.module.css";
 import { CgLoadbarSound } from "react-icons/cg";
 import { PiMedalThin } from "react-icons/pi";
@@ -22,10 +22,14 @@ const menu_items = [
   },
 ];
 const SideBar = () => {
+   const [activePage, setActivePage] = useState(window.location.pathname);
+  useEffect(() => {
+    setActivePage(window.location.pathname);
+  }, []);
   return (
     <div className={classes["main"]}>
       {menu_items.map((item) => (
-        <div key={item.link} className={classes["item"]}>
+        <div onClick={() => setActivePage(item.link)} key={item.link} className={`${activePage==item.link?classes['active']:""} ${classes["item"]}`}>
           {item.icon}
           {item.title}
         </div>

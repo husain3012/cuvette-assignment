@@ -1,0 +1,25 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+
+.analysis{
+  font-size: 1em;
+  color: var(--gray-text);
+  max-width: 60ch;
+}
+
+.analysis .bold{
+  font-weight: bold;
+}
+
+.chart-container{
+  min-height: 15em;
+}
