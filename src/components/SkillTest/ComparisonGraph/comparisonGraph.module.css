@@ -23,3 +23,26 @@
 .chart-container{
   min-height: 15em;
 }
+
+
+.tooltip{
+  background-color: var(--black-text);
+  padding: 1em 1em;
+  border-radius: 0.4em;
+  width: 12ch;
+
+}
+
+.tooltip .value{
+  font-size: 1.1em;
+  color: var(--white);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+.tooltip .label{
+  font-size: 0.9em;
+  color: var(--gray);
+  font-weight: bold;
+  
+}
