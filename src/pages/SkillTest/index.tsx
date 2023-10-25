@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Page from "../../components/common/Page";
 import classes from "./skillTest.module.css";
-import Card from "../../components/common/Card";
 import SkillCard from "../../components/SkillTest/SkillCard";
 import QuickStatistics from "../../components/SkillTest/QuickStatistics";
 import ComparisonGraph from "../../components/SkillTest/ComparisonGraph";
@@ -31,19 +30,6 @@ const quick_statistics_data: IStatistics = {
   total: 15,
 };
 
-const comparison_graph_data: IComparisonGraph = {
-  analysis: "",
-  averagePercentile: 72,
-  percentile: 32,
-  data: [],
-};
-
-const question_analysis_data:IQuestionAnalysis = {
-    analysis:"There is a score of improvement",
-    correct:7,
-    total:15
-}
-
 const syllabus_data: ISyllabusAnalysis = {
   topics: [
     {
@@ -55,31 +41,70 @@ const syllabus_data: ISyllabusAnalysis = {
       topic: "Tags & References in HTML",
       percentage: 60,
       color: "#FF9142",
-
     },
     {
       topic: "Tables & CSS Basics",
       percentage: 24,
       color: "#FB5E5E",
-
     },
     {
       topic: "Tables & CSS Basics",
       percentage: 96,
       color: "#2EC971",
-
     },
   ],
 };
 const SkillTest = () => {
+  const [skillTestData, setSkillTestData] = useState<IStatistics>(
+    quick_statistics_data
+  );
+
+  const updateScores = ({
+    rank,
+    percentile,
+    currentScore,
+  }: {
+    rank?: number;
+    percentile?: number;
+    currentScore?: number;
+  }) => {
+    setSkillTestData((prev) => {
+      return {
+        rank: rank || prev?.rank,
+        correct: currentScore || prev?.correct,
+        percentile: percentile || prev?.percentile,
+        total: prev?.total,
+      };
+    });
+  };
+
+  const comparison_graph_data: IComparisonGraph = {
+    analysis: "",
+    averagePercentile: 72,
+    percentile: skillTestData.percentile,
+    data: Array.from({ length: 101 }, (v, k) => ({
+      percentile: k,
+      number: Math.floor(Math.random() * (100%k)), // random nice data points
+    })),
+  };
+
+  const question_analysis_data: IQuestionAnalysis = {
+    analysis: "There is a score of improvement",
+    correct: skillTestData.correct,
+    total: 15,
+  };
+
   return (
     <Page pageTitle="Skill Test">
       <div className={classes["main"]}>
         <div className={classes["first-column"]}>
-          <SkillCard {...skill_data} />
-
-          <QuickStatistics {...quick_statistics_data} />
-          <ComparisonGraph {...comparison_graph_data} />
+          <SkillCard
+            {...skill_data}
+            {...skillTestData}
+            updateScores={updateScores}
+          />
+          {skillTestData && <QuickStatistics {...skillTestData} />}
+          <ComparisonGraph {...comparison_graph_data} {...skillTestData} />
         </div>
         <div className={classes["second-column"]}>
           <SyllabusWiseAnalysis {...syllabus_data} />

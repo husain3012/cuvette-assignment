@@ -19,7 +19,7 @@ export interface IComparisonGraph {
     percentile: number;
     averagePercentile: number;
     analysis: string;
-    data: Array;
+    data: {percentile:number, number:number}[];
 
 
 }
@@ -41,3 +41,4 @@ export interface IQuestionAnalysis {
     total: number;
     analysis: string;
 }
+

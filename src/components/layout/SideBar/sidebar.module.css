@@ -38,4 +38,6 @@ cursor: pointer;
 
 .item.active{
     color: var(--blue-text);
+background-color: var(--hover-background);
+
 }

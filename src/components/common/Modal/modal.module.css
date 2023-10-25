@@ -1,0 +1,53 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: #16161662;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 500ms;
+}
+
+
+
+
+.modal-main{
+    display: flex;
+    flex-direction: column;
+    width: 65ch;
+    gap: 2em
+  
+
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.modal-title{
+    font-weight: bold;
+    font-size: 1.75em;
+
+}
+.modal-icon{
+    margin-left: auto;
+}
+
+.modal-body{
+
+}
+.modal-footer{
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 1em;
+
+}

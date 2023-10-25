@@ -1,9 +1,8 @@
 .main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
-  position: relative;
 }
 
 .app-bar {
@@ -27,4 +26,3 @@
   flex-grow: 1;
   padding: 2em;
 }
-
