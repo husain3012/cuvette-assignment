@@ -1,11 +1,11 @@
-import UserInfo from "./UserInfo";
+// import UserInfo from "./UserInfo";
 import classes from "./appBar.module.css";
 import cuvetteLogo from "/logo.png";
 
-const user = {
-  name: "Husain Shahid Rao",
-  avatar: "https://i.pravatar.cc/256",
-};
+// const user = {
+//   name: "Husain Shahid Rao",
+//   avatar: "https://i.pravatar.cc/256",
+// };
 
 const AppBar = () => {
   return (

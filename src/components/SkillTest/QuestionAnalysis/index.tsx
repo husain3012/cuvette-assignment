@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Card from "../../common/Card";
 import classes from "./questionAnalysis.module.css";
 import { IQuestionAnalysis } from "../../../types";

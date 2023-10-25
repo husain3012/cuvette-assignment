@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import classes from "./sidebar.module.css";
 import { CgLoadbarSound } from "react-icons/cg";
 import { PiMedalThin } from "react-icons/pi";

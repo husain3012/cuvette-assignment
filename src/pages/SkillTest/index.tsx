@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Page from "../../components/common/Page";
 import classes from "./skillTest.module.css";
 import SkillCard from "../../components/SkillTest/SkillCard";
@@ -82,7 +82,7 @@ const SkillTest = () => {
     analysis: "",
     averagePercentile: 72,
     percentile: skillTestData.percentile,
-    data: Array.from({ length: 101 }, (v, k) => ({
+    data: Array.from({ length: 101 }, (_v, k) => ({
       percentile: k,
       number: Math.floor(Math.random() * (100%k)), // random nice data points
     })),

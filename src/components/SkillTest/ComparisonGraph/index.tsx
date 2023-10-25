@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./comparisonGraph.module.css";
 
 import Card from "../../common/Card";

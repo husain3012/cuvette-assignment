@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import classes from "./skillCard.module.css";
 import Card from "../../common/Card";
 import { ISkill, IStatistics } from "../../../types";
