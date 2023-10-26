@@ -21,7 +21,7 @@ const ComparisonGraph = (
     (a, d) => Math.max(a, d.number),
     0
   );
-  console.log(maxNumber);
+
   let graphData = comparisonGraphData.data.map((d) => ({ ...d, you: 0 }));
   const percentileExists = graphData.findIndex(
     (x) => x.percentile == userPercentile
@@ -63,7 +63,7 @@ const ComparisonGraph = (
         the engineers who took the test.
       </p>
       <div className={classes["chart-container"]}>
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width={800} height="100%">
           <ComposedChart
             width={500}
             height={300}

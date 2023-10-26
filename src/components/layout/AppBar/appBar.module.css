@@ -1,5 +1,4 @@
 .container {
-  width: 100%;
   background-color: var(--white);
   display: flex;
   justify-content: space-between;
@@ -18,15 +17,19 @@
   border: 2px solid var(--gray);
   border-radius: 10px;
   display: flex;
-  gap: 2;
+  gap: 1em;
   align-items: center;
-  padding: 0.5em 1.2em;
+  padding: 0.4em 1.2em;
   margin-left: auto;
 }
-
+.user-avatar {
+  display: flex;
+  align-items: center;
+}
 .user-avatar img{
-   width: 32px;
+   width: 28px;
    border-radius: 100%;
+   
 
 
 }

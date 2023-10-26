@@ -11,6 +11,7 @@
 
 .stats {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .stat-card {

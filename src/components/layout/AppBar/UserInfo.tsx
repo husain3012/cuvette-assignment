@@ -6,7 +6,7 @@ const UserInfo = ({name, avatar}:{name:string, avatar:string}) => {
   return (
     <div className={classes['user-info-card']}>
         <div className={classes['user-avatar']}>
-            <img src={avatar} alt={name} width={64}/>
+            <img src={avatar} alt={'avatar'} width={64}/>
         </div>
         <div className={classes['user-name']}>{name}</div>
     </div>

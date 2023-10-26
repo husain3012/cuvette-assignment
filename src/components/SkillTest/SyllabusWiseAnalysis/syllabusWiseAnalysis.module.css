@@ -34,8 +34,9 @@
 
 .progress-bar{
     display: flex;
-    width: 20em;
+    width: 100%;
     align-items: center;
+    justify-content: space-between;
 }
 .progress-label{
     margin-left: 5em;

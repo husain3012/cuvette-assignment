@@ -6,6 +6,7 @@ const Layout = ({ children }: { children?: React.ReactNode }) => {
   return (
     <div className={classes["main"]}>
       <div className={classes["app-bar"]}>
+        
         <AppBar />
       </div>
       <div className={classes["body"]}>

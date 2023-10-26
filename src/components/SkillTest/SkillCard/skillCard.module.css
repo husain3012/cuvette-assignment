@@ -26,13 +26,14 @@
 }
 
 .update-btn {
-  margin-left: 2em;
+  margin-left: auto;
 }
 
 .update-form{
     display: flex;
     flex-direction: column;
     gap: 2em;
+
 }
 
 .update-form-item {
@@ -59,7 +60,8 @@ font-size: 0.9em;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.4em 0.7em;
+  width: 2.5em;
+  height: 2.5em;
   background-color: var(--blue-primary);
   color: var(--white);
   border-radius: 100%;

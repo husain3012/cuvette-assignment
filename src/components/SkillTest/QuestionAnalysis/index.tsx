@@ -52,6 +52,7 @@ const QuestionAnalysis = (questionAnalysisData: IQuestionAnalysis) => {
               innerRadius={60}
               animationDuration={1400}
               paddingAngle={0}
+              enableBackground='sax'
         
               
             >
@@ -59,6 +60,7 @@ const QuestionAnalysis = (questionAnalysisData: IQuestionAnalysis) => {
                 <Cell key={`cell-${index}`} fill={entry.color} />
               ))}
             </Pie>
+          
           </PieChart>
         </ResponsiveContainer>
       </div>

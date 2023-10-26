@@ -21,7 +21,9 @@
 }
 
 .chart-container{
+  width: fit-content;
   min-height: 15em;
+
 }
 
 

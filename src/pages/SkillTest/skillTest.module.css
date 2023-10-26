@@ -1,19 +1,26 @@
 .main {
   display: flex;
   gap: 2em;
+  justify-content: space-between;
 }
+
+
+
+@media only screen and (max-width: 600px){
+  .main {
+    flex-direction: column;
+  }}
 
 .first-column {
   display: flex;
   flex-direction: column;
   gap: 2em;
-
+  flex-grow: 1;
 }
 
 .second-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   gap: 2em;
-
-  }
-  
+  flex-grow: 1;
+}

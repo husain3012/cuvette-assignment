@@ -33,7 +33,7 @@ const SkillCard = (
     setCorrect(skillInfo.correct);
   }, [skillInfo.correct, skillInfo.percentile, skillInfo.rank]);
   return (
-    <Card className={classes["main"]}>
+    <Card className={classes["main"]} >
       <div className={classes["icon"]}>
         <img alt={skillInfo.skillName} src={skillInfo.skillIcon} width={32} />
       </div>
